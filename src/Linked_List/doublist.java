@@ -1,16 +1,16 @@
 package Linked_List;
 
-class Node {
+class Node1 {
     int data;
-    Node prev;
-    Node next;
+    Node1 prev;
+    Node1 next;
 }
 
 class Method1 {
-    static Node head, tail;
+    static Node1 head, tail;
 
     public static void insertbeg(int data) {
-        Node newNode = new Node();
+        Node1 newNode = new Node1();
         newNode.data = data;
         newNode.prev = null;
         newNode.next = head;
@@ -24,7 +24,7 @@ class Method1 {
     }
 
     public static void display() {
-        Node temp = head;
+        Node1 temp = head;
         while (temp != null) {
             System.out.print(temp.data + " <-> ");
             temp = temp.next;
